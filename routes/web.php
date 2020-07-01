@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('master');
+});
+Route::get('/data-tables', function () {
     return view('index');
 });
-Route::get('home','HomeControllers@home');
-Route::get('form','AuthController@form');
-Route::get('welcome','AuthController@welcome');
